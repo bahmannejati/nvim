@@ -51,7 +51,15 @@ M.generals = {
       Util.terminal.open(nil)
     end,
   },
+  -- this keymap is required due to the Terminal2 which opens at the bottom as a split window
+  {
+    "<c-/>",
+    function()
+      Util.terminal.open(nil)
+    end,
+  },
   { "<c-\\>", "<cmd>close<cr>", mode = { "t" } },
+  { "<c-/>", "<cmd>close<cr>", mode = { "t" } }
 
   -- remap macrp record key
   { "Q", "q" },
