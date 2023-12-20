@@ -33,10 +33,10 @@ return {
     "folke/persistence.nvim",
     opts = {
       options = {
-        "buffers",
-        "curdir",
-        "folds",
-        "tabpages",
+        -- "buffers",
+        -- "curdir",
+        -- "folds",
+        -- "tabpages",
         "winsize",
         "winpos",
         "help",

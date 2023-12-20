@@ -6,12 +6,13 @@
 
 local vscode = require("util.vscode")
 local settings = vscode.get_settings()
-local formatOnSave = settings["editor.formatOnSave"]
+-- local formatOnSave = settings["editor.formatOnSave"]
 local codeActionsOnSave = settings["editor.codeActionsOnSave"] or {}
 local eslintFixAllOnSave = codeActionsOnSave["source.fixAll.eslint"]
 local useFlatConfig = settings["eslint.experimental.useFlatConfig"]
 
-vim.g.autoformat = formatOnSave
+-- vim.g.autoformat = formatOnSave
+vim.g.autoformat = false
 
 return {
   { import = "lazyvim.plugins.extras.linting.eslint" },
