@@ -27,6 +27,7 @@ return {
       window = {
         border = float.border,
         winblend = float.winblend,
+        margin = 0.8,
       },
     },
   },
