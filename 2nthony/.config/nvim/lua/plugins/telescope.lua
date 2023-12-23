@@ -1,7 +1,7 @@
 local actions = require("telescope.actions")
 local entry_display = require("telescope.pickers.entry_display")
 
-local path_display = { shorten = { len = 3 } }
+local path_display = { shorten = { len = 10 } }
 
 local grep_picker = {
   preview = true,
