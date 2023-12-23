@@ -16,6 +16,9 @@ return {
       theme = "dropdown",
       defaults = {
         preview = false,
+        layout_config = {
+          vertical = { width = 0.8 },
+        },
         mappings = {
           i = {
             ["<Tab>"] = actions.move_selection_next,
@@ -81,7 +84,7 @@ return {
     config = function(_, opts)
       local theme = require("telescope.themes")["get_" .. (opts.theme or "dropdown")]
       if theme then
-        opts.defaults = theme(opts.defaults)
+        -- opts.defaults = theme(opts.defaults)
       end
 
       if vim.fn.executable("rg") then

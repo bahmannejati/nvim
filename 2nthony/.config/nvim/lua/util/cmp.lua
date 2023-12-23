@@ -35,7 +35,7 @@ M.duplicates = {
 }
 
 M.formatting = {
-  max_width = 50,
+  max_width = 100,
 }
 
 return M
