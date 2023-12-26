@@ -5,6 +5,8 @@ return {
   opts = {
     filesystem = {
       filtered_items = {
+        visible = true,
+        hide_gitignored = true,
         hide_dotfiles = false,
         hide_by_name = {
           ".git",
@@ -14,11 +16,12 @@ return {
         },
         always_show = {
           ".env",
+          ".env.local",
         },
       },
     },
     window = {
-      width = 35,
+      width = 40,
       mappings = {
         ["s"] = "",
         ["S"] = "",
