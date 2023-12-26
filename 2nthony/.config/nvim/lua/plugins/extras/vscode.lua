@@ -31,7 +31,8 @@ local keys = {
   { "<leader>fp", ":call VSCodeNotify('workbench.action.openRecent')<cr>" },
   { "<leader>fn", ":call VSCodeNotify('workbench.action.files.newUntitledFile')<cr>" },
   { "<leader>wo", ":call VSCodeNotify('workbench.action.toggleZenMode')<cr>" },
-  { "<leader>gg", ":call VSCodeNotify('workbench.view.scm')<cr>" },
+  -- { "<leader>gg", ":call VSCodeNotify('workbench.view.scm')<cr>" },
+  { "<leader>gg", "<nop>" },
 
   { "<c-j>", ":call VSCodeNotify('editor.action.marker.next')<cr>" },
   { "J", ":call VSCodeNotify('editor.action.marker.prev')<cr>" },

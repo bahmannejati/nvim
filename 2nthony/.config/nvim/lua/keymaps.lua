@@ -364,7 +364,7 @@ M.plugins = {
   },
   {
     "NeogitOrg/neogit",
-    optional = true,
+    enabled = true,
     keys = {
       { "<leader>gn", ":Neogit<cr>", desc = "Neogit" },
     },
