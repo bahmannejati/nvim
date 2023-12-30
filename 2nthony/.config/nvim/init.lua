@@ -2,8 +2,10 @@
 require("config.lazy")
 vim.cmd([[
 colorscheme tokyonight-night
+
+" https://ramezanpour.net/post/2022/07/24/access-os-clipboard-in-neovim
+set clipboard+=unnamedplus
 ]])
-vim.opt.clipboard = 'unnamedplus'
 
 -- utils
 local function t(str)
