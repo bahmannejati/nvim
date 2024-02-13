@@ -10,8 +10,29 @@ return {
         tsserver = {
           settings = {
             completions = {
-              completeFunctionCalls = true,
+              completeFunctionCalls = false,
             },
+            inlayHints = {
+              includeInlayVariableTypeHints = true,
+            },
+            typescript = {
+              format = {
+                indentSize = 10,
+                tabSize = 10
+              },
+              preferences = {
+                quoteStyle = "single"
+              }
+            },
+            javascript = {
+              format = {
+                indentSize = 10,
+                tabSize = 10
+              },
+              preferences = {
+                quoteStyle = "single"
+              }
+            }
           },
         },
       },

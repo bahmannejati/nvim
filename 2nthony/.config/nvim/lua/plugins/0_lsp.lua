@@ -2,7 +2,7 @@
 
 vim.lsp.set_log_level(vim.log.levels.ERROR)
 
-local vscode = require("util.vscode")
+-- local vscode = require("util.vscode")
 
 -- vim.g.autoformat = vscode.get_setting("editor.formatOnSave")
 vim.g.autoformat = false
