@@ -2,7 +2,7 @@ local has = require("lazyvim.util").has
 
 return {
   { "catppuccin", enabled = false },
-
+  { "daschw/leaf.nvim" },
   {
     "2nthony/vitesse.nvim",
     dependencies = {

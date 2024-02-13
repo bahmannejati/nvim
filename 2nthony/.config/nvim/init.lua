@@ -1,7 +1,15 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
+
+require("leaf").setup({
+  transparent = false,
+  theme = "dark", -- default: "auto", based on vim.o.background, alternatives: "light", "dark"
+  contrast = "medium", -- default: "low", alternatives: "medium", "high"
+})
+
+
 vim.cmd([[
-colorscheme tokyonight-night
+colorscheme leaf
 
 " https://ramezanpour.net/post/2022/07/24/access-os-clipboard-in-neovim
 set clipboard+=unnamedplus
