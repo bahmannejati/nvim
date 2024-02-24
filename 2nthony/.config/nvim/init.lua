@@ -26,6 +26,8 @@ local keymap = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
 keymap("n", "<leader>gn", ":Neogit<cr>", opts)
+keymap("n", "<leader>fd", "<cmd>Telescope dir live_grep<CR>", { noremap = true, silent = true })
+keymap("n", "<leader>fD", "<cmd>Telescope dir find_files<CR>", { noremap = true, silent = true })
 
 -- reset to initial windows
 vim.keymap.set("n", "<leader>wR", function()
